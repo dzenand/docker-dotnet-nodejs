@@ -1,5 +1,7 @@
 FROM microsoft/dotnet:2.1-sdk
 
+RUN  apt-get update -y && apt-get clean
+
 #install utilities
 RUN apt-get install -y zip unzip
 
